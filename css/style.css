@@ -311,8 +311,6 @@ nav .navbar-right p{
 
 .giving-form {
     width:100%;
-    height:800px;
-    padding:15px;
     background-color: rgba(242, 242, 242, 0.95);
     border-radius: 10px;
     margin-top:20px;
@@ -337,14 +335,113 @@ nav .navbar-right p{
 .giving-form .resslider .top {
     height:auto;
     display: block;
+    padding-top:15px;
 }
+
+.giving-form #steps{
+    margin-left:20%;
+}
+
+.giving-form .resslider .step {
+    padding:15px;
+    text-align: center;
+    float:left;
+}
+
+@media (max-width: 415px) {
+
+    .giving-form #steps {
+        margin-left:0;
+    }
+
+    .giving-form .resslider .step {
+        margin-left:3px;
+        padding:0 5px;
+    }
+
+
+}
+
+.numbCircleActive {
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    -moz-border-radius: 30px; /* or 50% */
+    border-radius: 30px; /* or 50% */
+    background-color: #e8d694;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    margin-left:8px;
+}
+
+.numbCircle {
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    -moz-border-radius: 30px; /* or 50% */
+    border-radius: 30px; /* or 50% */
+    background-color: #92abbc;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    margin-left:8px;
+}
+
 
 .giving-form .resslider .text {
-    text-align: center;
+    background-color: #ffffff;
+    margin:20px 0;
+    padding:25px;
+    width:100%;
+    border-top:1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+    float:left;
 }
 
-.giving-form .outside {
-    margin:0 auto;
+.giving-form .resslider .text p{
+    text-align: center;
+    font-size:14pt;
+    line-height: 20pt;
+}
+
+.giving-form .resslider .form-section{
+    padding:25px;
+    margin-bottom:10%;
+}
+
+.giving-form .resslider .small i{
+    margin-right:10px;
+}
+
+.giving-form .resslider .small p{
+    font-size:10px;
+    color:#000000;
+    float:left;
+    margin-left:2px;
+}
+
+input.empty {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+.outside {
+    width:100px;
+    margin-top:-60px;
+}
+
+#slider-prev {
+    position:absolute;
+    margin:-45px 0 0 40%;
+}
+#slider-next {
+    position:absolute;
+    margin:-45px 0 0 50%;
 }
 
 .bx-controls {
@@ -389,6 +486,15 @@ nav .navbar-right p{
     color:#346186; 
 }
 
+@media (max-width: 992px) {
+
+    .thank-you {
+        margin-top: 85px;
+    }
+
+
+}
+
 .matching-gift {
     width:100%;
     padding:15px 15px 20px 15px;
@@ -412,6 +518,10 @@ nav .navbar-right p{
 
 
 footer p{
+    color:#ffffff;
+}
+
+footer a {
     color:#ffffff;
 }
 

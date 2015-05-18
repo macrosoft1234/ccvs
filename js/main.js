@@ -26,8 +26,17 @@ $(document).ready(function(){
       $('.resslider').bxSlider({
           nextSelector: '#slider-next',
           prevSelector: '#slider-prev',
-          nextText: '<i class="fa fa-arrow-circle-right fa-lg"></i>',
-          prevText: '<i class="fa fa-arrow-circle-left fa-lg"></i>'
+          nextText: '<i class="fa fa-chevron-circle-right fa-3x" style="color:#92abbc;"></i>',
+          prevText: '<i class="fa fa-chevron-circle-left fa-3x" style="color:#92abbc;"></i>'
+        });
+
+      $('#iconified').on('keyup', function() {
+            var input = $(this);
+            if(input.val().length === 0) {
+                input.addClass('empty');
+            } else {
+                input.removeClass('empty');
+            }
         });
 
     
